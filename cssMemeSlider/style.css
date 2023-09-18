@@ -1,0 +1,40 @@
+:root {
+    --main-color: rgb(17, 30, 30);
+}
+
+body {
+    margin: 0;
+    background-color: var(--main-color);
+}
+
+header {
+    height: 20px;
+}
+
+footer {
+    height: 30px;
+}
+
+input {
+    display: none;
+}
+
+.wrapper {
+    max-width: 1024px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider .meme {
+    width: 20%;
+    float: left;
+}
+
+.slider .memes {
+    width: 400%;
+}
