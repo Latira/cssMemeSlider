@@ -31,7 +31,25 @@ input {
 }
 
 .meme {
-    width: 100%
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.meme-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1025px;
+    height: 800px;
+}
+
+.meme-text {
+    width: 100%;
+    color: mintcream;
+    text-align: start;
+    padding-left: 1px;
 }
 
 .slider .meme {
@@ -46,6 +64,15 @@ input {
 label {
     cursor: pointer;
 }
+
+.controls label:hover {
+    background: aliceblue;
+}
+
+.controls label:focus {
+    background: aliceblue;
+}
+
 
 #meme1:checked ~.slider .memes {
     margin-left: 0;
@@ -74,5 +101,6 @@ label {
     display: inline-block;
     width: 15px;
     height: 15px;
-    background: #bbb;
+    background: rgb(109, 142, 248);
+    cursor: pointer;
 }
