@@ -23,6 +23,9 @@ input {
     max-width: 900px;
     padding: 0 20px;
     margin: 0 auto;
+    @media (max-width: 950px) {
+        max-width: calc(100vw-50px);
+    }
 }
 
 .slider {
@@ -43,13 +46,26 @@ input {
     align-items: center;
     width: 900px;
     height: 600px;
-    background-color: rgb(17, 30, 30);
+    background-color: rgb(34, 64, 64);
     overflow: hidden;
+    border-radius: 30px;
+    @media (max-width: 950px) {
+        height: 300px;
+    }
+    @media (max-width: 750px) {
+        height: 200px;
+    }
 }
 
 .meme__img {
     height: 600px;
-    border-radius: 20px;
+    border-radius: 30px;
+    @media (max-width: 950px) {
+        height: 300px;
+    }
+    @media (max-width: 750px) {
+        height: 200px;
+    }
 }
 
 .meme__text {
@@ -57,6 +73,10 @@ input {
     color: mintcream;
     text-align: start;
     padding-left: 1px;
+    @media (max-width: 950px) {
+        padding-top: 30px;
+        width: calc(100vw - 200px);
+    }
 }
 
 .slider .meme {
@@ -72,21 +92,12 @@ label {
     cursor: pointer;
 }
 
-.controls label:hover {
-    background: aliceblue;
-}
-
-.controls label:focus {
-    background: aliceblue;
-}
-
-
 #meme1:checked ~.slider .memes {
     margin-left: 0;
 }
 
 #meme1:checked ~.controls .control-1 {
-    background-color: aliceblue;
+    background-color: rgb(17, 30, 30);
 }
 
 #meme2:checked ~.slider .memes {
@@ -94,7 +105,7 @@ label {
 }
 
 #meme2:checked ~.controls .control-2 {
-    background-color: aliceblue;
+    background-color: rgb(17, 30, 30);
 }
 
 #meme3:checked ~.slider .memes {
@@ -102,7 +113,7 @@ label {
 }
 
 #meme3:checked ~.controls .control-3 {
-    background-color: aliceblue;
+    background-color: rgb(17, 30, 30);
 }
 
 #meme4:checked ~.slider .memes {
@@ -110,20 +121,35 @@ label {
 }
 
 #meme4:checked ~.controls .control-4 {
-    background-color: aliceblue;
+    background-color: rgb(17, 30, 30);
 }
 
 .controls {
-    text-align: end;
+    display: flex;
+    justify-content: end;
     width: 100%;
     height: 50%;
+    margin-top: -40px;
+    @media (max-width: 950px) {
+        justify-content: center;
+        margin-top: -60px;
+    }
 }
 
 .controls label {
-    border-radius: 10px;
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    background: rgb(109, 142, 248);
+    padding: 5px;     
     cursor: pointer;
+}
+
+.control-container:hover .control{
+    background: aliceblue;
+}
+
+.control {
+    display: inline-block;
+    border-radius: 10px;
+    width: 10px;
+    height: 10px;
+    background: rgb(109, 142, 248);
+    border: 1px mediumslateblue solid;
 }
