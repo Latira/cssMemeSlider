@@ -50,22 +50,52 @@ input {
     overflow: hidden;
     border-radius: 30px;
     @media (max-width: 950px) {
-        height: 300px;
+        height: 500px;
+        width: 700px;
     }
     @media (max-width: 750px) {
-        height: 200px;
+        height: 400px;
+        width: 500px;
+    }
+    @media (max-width: 550px) {
+        height: 300px;
+        width: 300px;
     }
 }
 
 .meme__img {
+    width: 100%;
     height: 600px;
     border-radius: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     @media (max-width: 950px) {
-        height: 300px;
+        height: 500px;
     }
     @media (max-width: 750px) {
-        height: 200px;
+        height: 400px;
     }
+    @media (max-width: 550px) {
+        height: 300px;
+    }
+}
+
+.meme__img1 {
+    background-image: url('assets/1645080899113285789.jpg');
+}
+
+.meme__img2 {
+    background-image: url('assets/233596_10_trinixy_ru.jpg');
+    background-position: top;
+}
+
+.meme__img3 {
+    background-image: url('assets/dfccdf199808067969121ec5e2842623.jpg');
+}
+
+.meme__img4 {
+    background-image: url('assets/scale_2400.jpg');
 }
 
 .meme__text {
@@ -75,7 +105,13 @@ input {
     padding-left: 1px;
     @media (max-width: 950px) {
         padding-top: 30px;
-        width: calc(100vw - 200px);
+        width: 700px;
+    }
+    @media (max-width: 750px) {
+        width: 500px;
+    }
+    @media (max-width: 550px) {
+        width: 300px;
     }
 }
 
