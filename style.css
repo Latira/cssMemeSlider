@@ -33,21 +33,23 @@ input {
     overflow: hidden;
 }
 
+.memes {
+    width: 400%;
+}
+
 .meme {
-    display: flex;
+    display: inline-flex;
+    margin-right: -4px;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 25%;
 }
 
 .meme__img-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 900px;
     height: 600px;
     background-color: rgb(34, 64, 64);
-    overflow: hidden;
     border-radius: 30px;
     @media (max-width: 950px) {
         height: 500px;
@@ -113,15 +115,6 @@ input {
     @media (max-width: 550px) {
         width: 300px;
     }
-}
-
-.slider .meme {
-    width: 25%;
-    float: left;
-}
-
-.slider .memes {
-    width: 400%;
 }
 
 label {
