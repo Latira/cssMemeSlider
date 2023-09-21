@@ -186,8 +186,12 @@ label {
     cursor: pointer;
 }
 
-.control-container:hover .control{
+.control-container:hover .control {
     background: aliceblue;
+}
+
+.control-container:active .control {
+    background-color: mediumslateblue;
 }
 
 .control {
